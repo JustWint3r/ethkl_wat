@@ -1,4 +1,4 @@
-import {ethers} from 'ethers';
+import { ethers } from 'ethers';
 import { useState } from 'react';
 
 function App() {
@@ -28,10 +28,11 @@ function App() {
     <div className="App">
       <button onClick={connectWallet}>Connect Wallet</button>
       {wallet && accounts.length > 0 && (
-        <p>Connected to account: {accounts[0]}</p>
+        <p>Connected to account: {accounts[0].address}</p>
       )}
     </div>
   );
+
 }
 
 export default App;
