@@ -1,4 +1,5 @@
 import { ethers } from "ethers"
+import './App.css'
 
 function App() {
 
@@ -17,9 +18,12 @@ function App() {
 
 
   return (
-    <div>
-      <p>Sup</p>
-    </div>
+   
+      <div className = "title">
+        <p>we so ded wtf</p>
+        <h1>EtherTix</h1>
+      </div>
+  
   );
 }
 
