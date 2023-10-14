@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.title {
+  font-size: 2em;
+  margin: 10px 0;
+  text-align: center;
+  color: 	#61a4ad;
+}
+
+.logo {
+  max-width: 200px;
+}
