@@ -1,4 +1,4 @@
-import { ethers } from 'ethers';
+import {ethers} from 'ethers';
 import { useState } from 'react';
 
 function App() {
@@ -32,7 +32,6 @@ function App() {
       )}
     </div>
   );
-
 }
 
 export default App;
