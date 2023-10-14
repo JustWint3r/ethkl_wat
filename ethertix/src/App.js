@@ -1,6 +1,10 @@
 import { ethers } from "ethers"
 import './App.css'
 import logo from './logo.png'
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import Subpage from './viewHistory.js';
+
 
 function App() {
 
@@ -58,3 +62,5 @@ function App() {
 }
 
 export default App;
+
+how set up my app.js ?
