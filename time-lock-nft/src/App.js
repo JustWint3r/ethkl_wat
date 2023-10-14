@@ -13,9 +13,10 @@ const NFTTimeLockForm = ({ contractAddress, abi, signer }) => {
         try {
             // Convert the date and time input to a Unix timestamp (in seconds)
             const desiredTimestamp = Math.floor(Date.parse(unlockTimestamp) / 1000);
+            console.log('Desired Timestamp (Unix):', desiredTimestamp);
 
             // Connect to the smart contract
-            const contract = new ethers.Contract(contractAddress, abi, signer);
+            const contract = new ethers.Contract("0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8", abi, signer);
 
             // Call the setUnlockTimestamp function
             const tx = await contract.setUnlockTimestamp(desiredTimestamp);
@@ -25,6 +26,7 @@ const NFTTimeLockForm = ({ contractAddress, abi, signer }) => {
         } catch (error) {
             console.error('Error setting unlock timestamp:', error);
         }
+        
     };
 
     return (

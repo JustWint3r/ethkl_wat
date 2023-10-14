@@ -28,6 +28,8 @@ contract TimelockedNFT {
     }
 
     function transfer(address to) public onlyOwner isUnlocked {
-        // Implement the transfer logic here
+    require(to != address(0), "Invalid address");
+    owner = to; // Update the owner address
     }
+
 }
